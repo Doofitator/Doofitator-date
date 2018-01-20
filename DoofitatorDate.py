@@ -98,5 +98,8 @@ def time_in_their_timezone(timezone): #timezone as p10 (for utc+10) or m4 (utc-4
     
     if their_hour > 24:
         their_hour = their_hour - 24
+
+    if their_hour < 0:
+        their_hour = 24 + their_hour
     
     return str("%02d" % (their_hour,)) + str(their_minute)

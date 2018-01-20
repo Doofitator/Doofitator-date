@@ -34,5 +34,5 @@ Example:
 
 ### Bugs
 
-1. There seems to be an issue at certain times with minus timezones showing up as, for example, '-403', instead of '2003' (for 3 past 8 at night)
+1. ~~There seems to be an issue at certain times with minus timezones showing up as, for example, '-403', instead of '2003' (for 3 past 8 at night)~~
 2. There is an issue with the date calculations where dates that do not go over to the next month cause an issue. For example, `>>> the_date_in_x_days(2, "2018-20-01")` returns the technically correct answer of `'2018_-9_02'`, however it really should return `'2018_22_01'`.
